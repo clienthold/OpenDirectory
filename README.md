@@ -1,20 +1,23 @@
-# 🗂️ Open Directory Honeypot
+# 🗂️ Open Directory Honeypot ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 
 ## 🧩 Features
 
 - Delivering your **payload**
-- Logging of all visits
+- Logging of all downloads
 
 ## 📥 Deployment
-After downloading, edit the ```config.py``` configure
+```sh
+git clone https://github.com/clienthold/OpenDirectory.git
+cd OpenDirectory
+```
+
+edit the ```config.py``` configure
 
 ```python
 HONEYPOT_LIST = ["chrome.exe", "firefox.exe"] # LIST OF FILES
 PAYLOAD_PATH = "" # PATH FOR PAYLOAD FILE
 LOG_FILE = "honeypot.log" # PATH FOR LOG FILE
 ```
-
-After that, open the console, go to the directory and enter the following commands
 
 ### 🐧 For linux (gunicorn)
 ```sh
